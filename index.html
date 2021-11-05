@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Default css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!--  -->
+  <title>||Muzon||</title>
+</head>
+<body class="body">
+  <header class="main-header header">
+    <h1 class="header__title">Muzon</h1>
+  </header>
+  <div class="main">
+    <section class="music">
+      <div class="music__main-wrap">
+        <ul class="music__list">
+          <li class="music__item" data-src="./audio/music-1.mp3" id="1">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-1.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                NEFFEX cold
+              </p>
+            </div>
+          </li>
+          <li class="music__item" data-src="./audio/music-2.mp3" id="2">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-2.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                rize up
+              </p>
+            </div>
+          </li>
+          <li class="music__item" data-src="./audio/music-3.mp3" id="3">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-3.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                around the world
+              </p>
+            </div>
+          </li>
+          <li class="music__item" data-src="./audio/music-4.mp3" id="4">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-4.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                THNK U jay someday
+              </p>
+            </div>
+          </li>
+          <li class="music__item" data-src="./audio/music-5.mp3" id="5">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-5.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                NEFFEX life
+              </p>
+            </div>
+          </li>
+          <li class="music__item" data-src="./audio/music-6.mp3" id="6">
+            <div class="music__item-img-wrap">
+              <div class="music__item-play-wrap">
+                <i class="fas fa-play" id="music-play-icon"></i>
+              </div>
+              <img src="./images/album-6.png" alt="neffex">
+            </div>
+            <div class="music__item-text">
+              <p class="music__item-title">
+                funhouse
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <div class="music-player-wrap">
+    <button class="music-close-btn">
+      <i class="fas fa-angle-up" id="music-close-btn"></i>
+    </button>
+    <p class="music-title">(No songs yet)</p>
+    <audio src="" controls id="music-player"></audio>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

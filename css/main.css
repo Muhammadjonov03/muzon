@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  outline: unset;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+
+.header__title {
+  text-align: center;
+  padding: 10px;
+  color: #333;
+  border-bottom: 3px solid #333;
+}
+.music {
+  padding-bottom: 50px;
+}
+
+.music.active {
+  padding-bottom: 110px;
+}
+
+.music__list{
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  padding: 20px 9%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+}
+
+.music__item {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  padding: 15px;
+}
+
+.music__item-img-wrap {
+  height: 540px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden ;
+}
+
+.music__item-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.music__item-play-wrap {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.music__item-play-wrap i {
+  font-size: 5rem;
+  color: #eee;
+}
+
+.music__item.active-music .music__item-play-wrap {
+  bottom: 0;
+}
+
+.music__item-img-wrap:hover .music__item-play-wrap {
+  bottom: 0;
+}
+
+.music__item-text {
+  padding-top: 15px;
+}
+.music__item-title {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.music-player-wrap {
+  position: fixed;
+  bottom: -67px;left: 0;right: 0;
+  background: #fff;
+  z-index: 1000;
+  height: 120px;
+}
+
+.music-player-wrap.active {
+  bottom: 0;
+}
+
+.music-title {
+  font-size: 1.5rem;
+  border-top: 3px solid #333;
+  border-bottom: 1px solid #333;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.music-player-wrap audio {
+  width: 100%;
+}
+.music-player-wrap audio::-webkit-media-controls-enclosure {
+  border-radius: 0;
+  background:#fff;
+}
+
+.music-title::selection {
+  background: none;
+}
+
+.music-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  height: 50px;
+  width: 55px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  border: 3px solid #333;
+  border-bottom: none;
+}
+
+.music-close-btn i {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px){
+  .music__list {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 450px){
+  .music__list {
+    grid-template-columns: 1fr;
+    
+  }
+  .music__item-img-wrap {
+    height: 300px;
+  }
+}
